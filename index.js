@@ -6,7 +6,7 @@ const puzzles = [
   'https://meleedle.netlify.app/',
 ];
 
-const slackUrl = '';
+const slackUrl = process.env.slack_url;
 
 exports.onEvent = (event, context) => {
   puzzles.forEach((linkToDisplay) => {
